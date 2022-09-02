@@ -11,4 +11,7 @@ nav a:hover {
 .customlink {
     display: flex;
     justify-content: center;
+    background-color: #0ea9a9;
+    padding: 10px 0;
+    margin-bottom: 20px;
 }
