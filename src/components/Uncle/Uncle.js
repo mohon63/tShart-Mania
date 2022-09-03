@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Uncle = () => {
+const Uncle = ({ house }) => {
     return (
         <div>
-            <h4>Hi uncle</h4>
+            <h3>House: {house}</h3>
+            <h4>Uncle</h4>
         </div>
     );
 };

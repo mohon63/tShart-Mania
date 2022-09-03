@@ -1,9 +1,19 @@
 import React from 'react';
+import Father from '../Father/Father';
+import Uncle from './../Uncle/Uncle';
+import Aunty from './../Aunty/Aunty';
+import './Grandpa.css';
 
 const Grandpa = () => {
+    const house = 7;
     return (
-        <div>
-            <h2>hi GrandPa</h2>
+        <div className='grandpa'>
+            <h2>Grandpa</h2>
+            <section style={{ display: 'flex', justifyContent: 'center' }}>
+                <Father house={house}></Father>
+                <Uncle house={house}></Uncle>
+                <Aunty house={house}></Aunty>
+            </section>
         </div>
     );
 };
