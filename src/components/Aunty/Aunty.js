@@ -1,13 +1,17 @@
 import React, { useContext } from 'react';
 import { RingContext } from '../Grandpa/Grandpa';
 
-const Aunty = ({ house }) => {
-    const diamond = useContext(RingContext);
+const Aunty = () => {
+    const [house, setHouse] = useContext(RingContext);
+    const handleHouseCount = () => {
+        const newHouseCount = house + 1;
+        setHouse(newHouseCount);
+    }
     return (
         <div>
             <h3>House: {house}</h3>
             <h4>Aunty</h4>
-            <h5>Gift: {diamond}</h5>
+            <button onClick={handleHouseCount}>HouseCount</button>
         </div>
     );
 };

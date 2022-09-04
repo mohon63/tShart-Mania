@@ -16,7 +16,7 @@ const Grandpa = () => {
         setHouse(newHouseCount);
     }
     return (
-        <RingContext.Provider value={ornament}>
+        <RingContext.Provider value={[house, setHouse]}>
             <div className='grandpa'>
                 <h2>Grandpa</h2>
 
