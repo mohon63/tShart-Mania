@@ -6,6 +6,7 @@ import Brother from './../Brother/Brother';
 const Father = ({ house }) => {
     return (
         <div>
+            <h2>Father</h2>
             <h3>House: {house}</h3>
             <div style={{ display: 'flex' }}>
                 <MySelf house={house}></MySelf>
